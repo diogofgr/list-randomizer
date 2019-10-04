@@ -1,0 +1,84 @@
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #008282;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.windowframe {
+  background-color: #c3c3c3;
+  padding: 2px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid rgb(56, 56, 56);
+  border-right: 2px solid rgb(56, 56, 56);
+}
+
+.windowheader {
+  background-color: #000082;
+  color: white;
+  padding: 3px;
+  h1 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.windowbody {
+  padding: 15px;
+
+  &-content {
+    display: flex;
+  }
+}
+
+.list-container {
+  background-color: #ffffcd;
+  padding: 20px;
+  border-top: 2px solid rgb(158, 158, 158);
+  border-left: 2px solid rgb(158, 158, 158);
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  flex-grow: 1;
+
+  &-white {
+    background-color: white;
+  }
+
+  &-content {
+    max-width: 400px;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  textarea {
+    border: none;
+  }
+}
+
+.buttons {
+  margin-left: 10px;
+  max-width: 130px;
+  button, input[type=submit]{
+    color: black;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
+
+button, input[type=submit] {
+  background-color: #c3c3c3;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid rgb(56, 56, 56);
+  border-right: 2px solid rgb(56, 56, 56);
+}
