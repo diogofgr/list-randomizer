@@ -1,5 +1,6 @@
 {
   "license": "UNLICENSED",
+  "homepage":"https://diogofgr.github.io/list-randomizer/",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
@@ -35,6 +36,6 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --env.ENVIRONMENT=development",
     "lint": "eslint './src/**/*.js*'",
-    "deploy": "webpack -p --env.ENVIRONMENT=production && gh-pages -d build -b master"
+    "deploy": "webpack -p --env.ENVIRONMENT=production && gh-pages -d build"
   }
 }

@@ -8,6 +8,7 @@ const App = () => {
         <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/edit" component={Edit} />
+            <Route render={() => <p>404 page not found</p>} />
         </Switch>
     );
 };

@@ -8,7 +8,9 @@ class Home extends Component {
     };
 
     componentDidMount() {
-        const list = window.localStorage.getItem('list').split(';');
+        const list = window.localStorage.getItem('list')
+            ? window.localStorage.getItem('list').split(';')
+            : [];
         this.setState({
             list: this.randomize(list),
             isLoaded: true,
@@ -18,7 +20,6 @@ class Home extends Component {
     handleRandomizeList = () => {
         const { isLoaded } = this.state;
         if (!isLoaded) return;
-        console.log('hello');
         this.setState(state => ({ list: this.randomize(state.list) }));
     }
 

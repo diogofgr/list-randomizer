@@ -37,7 +37,7 @@ module.exports = (env) => {
             new HtmlWebpackPlugin({
                 template: '!!html-loader!index.html'
             }),
-            new webpack.DefinePlugin({ ...envKeys, hello: 'there' })
+            new webpack.DefinePlugin({ ...envKeys })
         ],
         devtool: 'sourcemap',
         module: {

@@ -7,7 +7,9 @@ class Edit extends Component {
     };
 
     componentDidMount() {
-        const list = window.localStorage.getItem('list').split(';');
+        const list = window.localStorage.getItem('list')
+            ? window.localStorage.getItem('list').split(';')
+            : [];
         this.setState({
             list,
             isLoaded: true,
